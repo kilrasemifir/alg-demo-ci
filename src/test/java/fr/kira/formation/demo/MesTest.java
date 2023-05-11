@@ -9,7 +9,7 @@ public class MesTest {
         System.out.println("test");
     }
 
-//    @Test
+    @Test
     public void fail() {
         assert false;
     }
