@@ -16,4 +16,8 @@ jobs:
     steps:
       - name: Hello world
         run: echo "Hello world"
+      - run: ls -a
+      - name: Récupération du code
+        uses: actions/checkout@v3.5.2
+      - run: ls -a
    
