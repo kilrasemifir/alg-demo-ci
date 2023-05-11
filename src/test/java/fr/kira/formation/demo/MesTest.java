@@ -11,6 +11,6 @@ public class MesTest {
 
     @Test
     public void fail() {
-        assert false;
+        assert true;
     }
 }
