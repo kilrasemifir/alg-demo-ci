@@ -16,8 +16,12 @@ jobs:
     steps:
       - name: Hello world
         run: echo "Hello world"
-      - run: ls -a
       - name: Récupération du code
         uses: actions/checkout@v3.5.2
-      - run: ls -a
+      - name: setup java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin' # See 'Supported distributions' for available options
+          java-version: '17'
+      - run: gradlew test
    
