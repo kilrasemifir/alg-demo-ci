@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/kilrasemifir/alg-demo-ci/compare/v1.2.5...v1.3.0) (2023-05-12)
+
+
+### Features
+
+* ajout des acteurs ([9767e0f](https://github.com/kilrasemifir/alg-demo-ci/commit/9767e0f5a1afaa31ec07647bfc4845f65460eb73))
+
 ### [1.2.5](https://github.com/kilrasemifir/alg-demo-ci/compare/v1.2.4...v1.2.5) (2023-05-12)
 
 
