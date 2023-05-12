@@ -1,0 +1,60 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo-alg
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: demo-alg
+  template:
+    metadata:
+      labels:
+        app: demo-alg
+    spec:
+      containers:
+        - name: demo-alg
+          image: killraoux/demo-alg-ci:v1.3.1
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+          env:
+            - name: MONGO_HOST
+              value: my-release-mongodb
+            - name: MONGO_DB
+              value: acteurs
+          ports:
+            - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: demo-alg
+spec:
+  selector:
+    app: demo-alg
+  ports:
+    - port: 80
+      targetPort: 8080
+---
+# Gateway
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: demo-alg-ing
+  labels:
+    name: demo-alg-ing
+spec:
+  rules:
+    - http:
+        paths:
+          - pathType: Prefix
+            path: "/"
+            backend:
+              service:
+                name: demo-alg
+                port:
+                  number: 80
+
+
