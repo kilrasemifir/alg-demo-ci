@@ -3,3 +3,4 @@ spring:
     mongodb:
       uri: mongodb://${MONGO_HOST:localhost}:27017/${MONGO_DB:acteurs}
       username: ${MONGO_USERNAME:root}
+      password: ${MONGO_PASSWORD:root}
