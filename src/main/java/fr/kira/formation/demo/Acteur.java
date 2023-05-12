@@ -15,4 +15,11 @@ public class Acteur {
     private String nom;
     private String prenom;
     private List<String> roles = new ArrayList<>();
+
+    public Acteur(String id, String nom, String prenom, List<String> roles) {
+        this.id = id;
+        this.nom = nom;
+        this.prenom = prenom;
+        this.roles = roles;
+    }
 }
