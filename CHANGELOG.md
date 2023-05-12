@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.2](https://github.com/kilrasemifir/alg-demo-ci/compare/v1.2.1...v1.2.2) (2023-05-12)
+
+
+### Bug Fixes
+
+* ajout d'env pour l'auth mongo ([f465079](https://github.com/kilrasemifir/alg-demo-ci/commit/f4650794c7f8a1055fd40eb0e907bba4cec6f3cd))
+
 ### [1.2.1](https://github.com/kilrasemifir/alg-demo-ci/compare/v1.2.0...v1.2.1) (2023-05-12)
 
 ## [1.2.0](https://github.com/kilrasemifir/alg-demo-ci/compare/v1.1.0...v1.2.0) (2023-05-12)
