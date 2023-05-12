@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.5](https://github.com/kilrasemifir/alg-demo-ci/compare/v1.2.4...v1.2.5) (2023-05-12)
+
+
+### Bug Fixes
+
+* changement du password mongo ([d26613d](https://github.com/kilrasemifir/alg-demo-ci/commit/d26613d7ebcb1befd304708e7263c04bbffeb7f9))
+
 ### [1.2.4](https://github.com/kilrasemifir/alg-demo-ci/compare/v1.2.3...v1.2.4) (2023-05-12)
 
 
