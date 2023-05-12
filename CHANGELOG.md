@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.3](https://github.com/kilrasemifir/alg-demo-ci/compare/v1.3.2...v1.3.3) (2023-05-12)
+
+
+### Bug Fixes
+
+* ahjout des getters et setters ([47fae6f](https://github.com/kilrasemifir/alg-demo-ci/commit/47fae6f6d42286e6a33aa046efd36c63256d4227))
+
 ### [1.3.2](https://github.com/kilrasemifir/alg-demo-ci/compare/v1.3.1...v1.3.2) (2023-05-12)
 
 
