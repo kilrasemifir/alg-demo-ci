@@ -21,9 +21,17 @@ spec:
               cpu: "500m"
           env:
             - name: MONGO_HOST
-              value: my-release-mongodb
+              valueFrom:
+                configMapKeyRef:
+                  name: myapp-configmap
+                  key: mongo.host
             - name: MONGO_DB
               value: acteurs
+            - name: MON_SERVICE_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: myapp-configmap
+                  key: mon.service.url
           ports:
             - containerPort: 8080
 ---
@@ -56,5 +64,3 @@ spec:
                 name: demo-alg
                 port:
                   number: 80
-
-

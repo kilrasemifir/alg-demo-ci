@@ -30,6 +30,7 @@ helm install --set auth.enabled=false mongo oci://registry-1.docker.io/bitnamich
 ### Déployer l'application
 
 ```bash
+kubectl apply -f app-config.yml
 kubectl apply -f demo-kube.yml
 ```
 
